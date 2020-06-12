@@ -3,8 +3,8 @@ from tkinter import *
 from functools import partial
 from tkinter import messagebox
 
-win=Tk()
-win.geometry('500x500')
+#win=Tk()
+#win.geometry('500x500')
 #def pr():
 #    print('hi')
 #win.geometry("500x500")
@@ -108,5 +108,74 @@ b=Button(win,text='popup',command=p)
 b.pack()'''
 
 
+#menu Button
 
-win.mainloop()
+'''def nothing():
+    file=Toplevel(win)
+    button=Button(file,text="do nothing")
+    button.pack()
+
+menubar=Menu(win)
+
+filemenu=Menu(menubar)
+filemenu.add_command(label="new window ",command=nothing)
+filemenu.add_command(label="new close window ",command=nothing)
+filemenu.add_command(label="new save window ",command=nothing)
+filemenu.add_command(label="new save as window ",command=nothing)
+filemenu.add_command(label="new quit window ",command=win.quit)
+
+menubar.add_cascade(label="file",menu=filemenu)
+
+editmenu=Menu(menubar)
+editmenu.add_command(label="udo ",command=nothing)
+editmenu.add_command(label="paste ",command=nothing)
+editmenu.add_command(label="copy ",command=nothing)
+editmenu.add_command(label="select",command=nothing)
+editmenu.add_separator( )
+editmenu.add_command(label="new quit ",command=win.quit)
+
+
+menubar.add_cascade(label="edit",menu=editmenu)
+
+
+
+win.config(menu=menubar)'''
+
+
+#scale
+
+'''s=Scale(win)
+s.pack()
+
+sb=Spinbox(win,from_=0 ,to=10)
+sb.pack()
+
+scb=Scrollbar(win)
+scb.pack(side=RIGHT,fill=Y)
+list=Listbox(win,yscrollcommand=scb.set)
+for line in range(100):
+    list.insert(END,'this is '+str(line))
+
+list.pack(side=LEFT,fill=BOTH)'''
+
+
+#paned window
+
+'''pw=PanedWindow()
+pw.pack(fill=BOTH,expand=1)
+
+left=Entry(pw,bd=5)
+pw.add(left)
+
+pw2=PanedWindow(pw,orient=VERTICAL)
+pw.add(pw2)
+
+top=Scale(pw2,orient=HORIZONTAL)
+pw2.add(top)
+
+botton=Button(pw2,text="ok")
+pw2.add(botton)
+
+
+mainloop()'''
+#win.mainloop()
