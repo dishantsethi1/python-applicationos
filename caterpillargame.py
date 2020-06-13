@@ -103,9 +103,9 @@ def move_right():
         caterpillar.setheading(0)
 
 t.onkey(start_game,'space')
-t.onkey(move_up,'Down')
+t.onkey(move_up,'Up')
 t.onkey(move_right,'Right')
-t.onkey(move_down,'Up')
+t.onkey(move_down,'Down')
 t.onkey(move_left,'Left')
 t.listen()
 t.mainloop()
